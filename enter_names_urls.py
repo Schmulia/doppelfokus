@@ -1,4 +1,3 @@
-
 with open('soundcloudrss.rss') as old_rss_file:
     old_rss_list = old_rss_file.readlines()
     old_rss_list = [name.rstrip('\n') for name in old_rss_list]
@@ -21,6 +20,10 @@ with open("doppelfokus_rss.rss", "a") as new_rss:
             url = old_rss_line.split("url=")[1]
             url = url.split(" ")[0]
             new_line = old_rss_line.replace(url, '"'+file+'"')
+            new_rss.write(new_line+"\n")
+        elif 'http://i1.sndcdn.com/' in old_rss_line:
+            new_line = old_rss_line.replace('http://i1.sndcdn.com/', 'https://github.com/Schmulia/doppelfokus/blob/master/images/')
+            print(new_line)
             new_rss.write(new_line+"\n")
         else:
             new_rss.write(old_rss_line+"\n")
