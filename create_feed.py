@@ -15,7 +15,7 @@ with open("doppelfokus.rss", "a") as new_rss:
         if "<atom:link href" in old_rss_line:
             url = old_rss_line.split("href=")[1]
             url = url.split(" ")[0]
-            new_line = old_rss_line.replace(url, '"https://raw.githubusercontent.com/Schmulia/doppelfokus/master/doppelfokus_rss.rss"')
+            new_line = old_rss_line.replace(url, '"https://raw.githubusercontent.com/Schmulia/doppelfokus/master/doppelfokus.rss"')
             new_rss.write(new_line+"\n")
         elif "<link>https://soundcloud.com/doppelfokus" in old_rss_line:
             file, link = next(file_link)
