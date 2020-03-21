@@ -24,7 +24,7 @@ Der Film-Podcast von Immo und Julia. Lieblingsfilme, Kinostarts, Jahrenrückblic
 
 [Folge 63 Eighth Grade](https://drive.google.com/uc?export=download&amp;id=1A6MG2fpscBqcLOYz6jlNbtfXifo_MPzz)
 
-[Folge 62 The Wrestler - Julias Lieblingsfilm 2009 Vergleich Mit The Rider](https://drive.google.com/uc?export=download&amp;id=10hdMCJNPAQqcwyVlV36QztDesjHMwcIL)
+[Folge 62 The Wrestler - Julias Lieblingsfilm 2009/Vergleich Mit The Rider](https://drive.google.com/uc?export=download&amp;id=10hdMCJNPAQqcwyVlV36QztDesjHMwcIL)
 
 [Folge 61 Burning](https://drive.google.com/uc?export=download&amp;id=18EJdGR6yX3dF3pt8t62hFj1D7TAo7USw)
 
