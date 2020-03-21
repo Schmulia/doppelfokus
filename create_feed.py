@@ -27,7 +27,7 @@ with open("doppelfokus.rss", "a") as new_rss:
             new_line = old_rss_line.replace(url, '"'+file+'"')
             new_rss.write(new_line+"\n")
         elif 'http://i1.sndcdn.com/' in old_rss_line:
-            new_line = old_rss_line.replace('http://i1.sndcdn.com/', 'https://raw.githubusercontent.com/Schmulia/doppelfokus/master/images')
+            new_line = old_rss_line.replace('http://i1.sndcdn.com/', 'https://raw.githubusercontent.com/Schmulia/doppelfokus/master/images/')
             new_rss.write(new_line+"\n")
         else:
             new_rss.write(old_rss_line+"\n")
