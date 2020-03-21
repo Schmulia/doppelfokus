@@ -9,10 +9,15 @@ with open('episode_links.txt', 'r') as link_file:
 link_list.reverse()
 file_list = [link.replace("open?", "uc?export=download&amp;") for link in link_list]
 
-with open("doppelfokus_rss.rss", "a") as new_rss:
+with open("doppelfokus.rss", "a") as new_rss:
     file_link = zip(file_list, link_list)
     for old_rss_line in old_rss_list:
-        if "<link>https://soundcloud.com/doppelfokus" in old_rss_line:
+        if "<atom:link href" in old_rss_line:
+            url = old_rss_line.split("href=")[1]
+            url = url.split(" ")[0]
+            new_line = old_rss_line.replace(url, '"https://raw.githubusercontent.com/Schmulia/doppelfokus/master/doppelfokus_rss.rss"')
+            new_rss.write(new_line+"\n")
+        elif "<link>https://soundcloud.com/doppelfokus" in old_rss_line:
             file, link = next(file_link)
             replacement_link = "<link>" + link + "</link>" + "\n"
             new_rss.write(replacement_link)
@@ -22,8 +27,7 @@ with open("doppelfokus_rss.rss", "a") as new_rss:
             new_line = old_rss_line.replace(url, '"'+file+'"')
             new_rss.write(new_line+"\n")
         elif 'http://i1.sndcdn.com/' in old_rss_line:
-            new_line = old_rss_line.replace('http://i1.sndcdn.com/', 'https://github.com/Schmulia/doppelfokus/blob/master/images/')
-            print(new_line)
+            new_line = old_rss_line.replace('http://i1.sndcdn.com/', 'https://raw.githubusercontent.com/Schmulia/doppelfokus/master/images')
             new_rss.write(new_line+"\n")
         else:
             new_rss.write(old_rss_line+"\n")
