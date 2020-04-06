@@ -1,4 +1,4 @@
-@media (width > 600px) {
+@media (min-width: 600px) {
     p {
     padding: 30px;}
     .image {
@@ -17,7 +17,7 @@
     }
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
     p {
     padding: 15px;}
     .image {
