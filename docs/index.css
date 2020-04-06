@@ -1,0 +1,143 @@
+@media (width > 600px) {
+    p {
+    padding: 30px;}
+    .image {
+       width: 100px;
+       height: 100px;
+    }
+    .right {
+        padding-right: 30px;
+        text-align: right;
+    }
+    h2 {
+        font-size: larger;
+    }
+    .top_heading {
+         font-size: 32px;
+    }
+}
+
+@media (width <= 600px) {
+    p {
+    padding: 15px;}
+    .image {
+       width: 75px;
+       height: 75px;
+    }
+    .right {
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+    h2 {
+        font-size: large;
+    }
+    .top_heading {
+         font-size: 27px;
+    }
+}
+
+.top {
+    background: #363434;
+    margin: auto;
+    max-width: 900px;
+    min-height: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_image_heading {
+    display: flex;
+}
+
+.top .image {
+    border: 3px solid gray;
+}
+
+.top_heading {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    max-width: 600px;
+    color: #a2cfdf;
+}
+
+.right .image {
+    width: 35px;
+   height: 35px;
+   padding: 5px;
+}
+
+.episode {
+    padding: 0;
+    padding-top: 20px;
+}
+
+.episode_top {
+    display: flex;
+    padding: 15px;
+    margin: auto;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.episode .image {
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid black;
+}
+
+.episode_heading {
+    padding-left: 25px;
+    color: #27677d;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+html {
+    background-color: #605e5e;
+}
+
+body {
+    font-family:  "Segoe UI", "Helvetica", sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    margin: auto;
+    max-width: 900px;
+    border: 10px;
+}
+button {
+    background: none;
+    color: gray;
+    border: none;
+}
+a.links_right {
+    text-decoration: none;
+    margin: right;
+}
+h3 {
+    padding: 10px;
+    margin: auto;
+    max-width: 250px;
+}
+p.hidden {
+    margin: auto;
+    margin-bottom: 30px;
+    display: none;
+}
+
+a.download {
+    line-height: 1.5;
+    color: gray;
+}
+
+h2 {
+    text-decoration: none;
+    text-align: left;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
