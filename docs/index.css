@@ -58,7 +58,7 @@
 .top_heading {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 20px;
+    padding-left: 20px;
     max-width: 600px;
     color: #a2cfdf;
 }
