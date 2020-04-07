@@ -14,7 +14,11 @@
     }
     .top_heading {
          font-size: 32px;
+         max-width: 80%;
     }
+    .episode_heading {
+    max-width: 80%;
+}
 }
 
 @media (max-width: 600px) {
@@ -33,7 +37,11 @@
     }
     .top_heading {
          font-size: 27px;
+         max-width: 60vw;
     }
+    .episode_heading {
+    max-width: 60vw;
+}
 }
 
 .top {
@@ -59,7 +67,6 @@
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 20px;
-    max-width: 600px;
     color: #a2cfdf;
 }
 
